@@ -12,10 +12,10 @@ export const ROUTES: RouteInfo[] = [
     { path: '/dashboard',     title: 'Dashboard',         icon:'nc-bank',       class: '' },
     { path: '/notices',         title: 'Notices',             icon:'nc-align-center',    class: '' },
     { path: '/my-saved-notices',          title: 'Saved',              icon:'nc-bookmark-2',      class: '' },
-    { path: '/notifications', title: 'Notifications',     icon:'nc-bell-55',    class: '' },
+    // { path: '/notifications', title: 'Notifications',     icon:'nc-bell-55',    class: '' },
     { path: '/user',          title: 'User Profile',      icon:'nc-single-02',  class: '' },
-    { path: '/table',         title: 'Table List',        icon:'nc-tile-56',    class: '' },
-    { path: '/typography',    title: 'Typography',        icon:'nc-caps-small', class: '' },
+    // { path: '/table',         title: 'Table List',        icon:'nc-tile-56',    class: '' },
+    // { path: '/typography',    title: 'Typography',        icon:'nc-caps-small', class: '' },
 ];
 
 @Component({

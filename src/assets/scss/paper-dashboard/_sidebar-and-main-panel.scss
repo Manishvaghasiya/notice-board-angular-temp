@@ -266,7 +266,7 @@
         @include sidebar-active-color($warning-color);
     }
     &[data-active-color="danger"]{
-        @include sidebar-active-color($danger-color);
+        @include sidebar-active-color(#3b5998);
     }
 }
 

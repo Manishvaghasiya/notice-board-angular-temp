@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-md-3" *ngFor="let d of data">
+    <div class="card">
+      <!-- <div class="image">
+        <img src="assets/img/damir-bosnjak.jpg" alt="...">
+      </div> -->
+      <div class="card-body">
+        <div class="author">
+          <!-- <a href="#"> -->
+            <img class="avatar border-gray" src="assets/img/angular2-logo.png" alt="...">
+            <h5 class="title" style="color: #3b5998;">{{d.subject}}</h5>
+          <!-- </a> -->
+          <p class="description" style="color: black;">
+            Primary Contact : {{d.SupportabilityEngineer}}
+          </p>
+          <p class="description" style="color: black;">
+            {{d.slack}}
+          </p>
+        </div>
+        <p class="description" style="color: black;">
+          {{d.details}}
+        </p>
+      </div>
+      <div class="card-footer" style="padding: 0%;">
+        <hr>
+        <div class="button-container">
+          <div class="row">
+            <div class="col-lg-5 ml-auto">
+              <h5> Created
+                <br>
+                <small>{{d.createdDate}}</small>
+              </h5>
+            </div>
+            <div class="col-lg-5 mr-auto">
+              <h5> Inactive
+                <br>
+                <small>{{d.inactiveDate}}</small>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
