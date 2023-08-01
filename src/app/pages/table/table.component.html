@@ -2,11 +2,113 @@
   <div class="col-md-12">
     <div class="card">
       <div class="card-header">
-        <h4 class="card-title"> Simple Table</h4>
+        <h4 class="card-title">Add Notice</h4>
       </div>
       <div class="card-body">
-        <div class="table-responsive">
-          <table class="table">
+        <form>
+          <div class="row">
+            <div class="col-md-6 pr-1">
+              <div class="form-group">
+                <label>Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Add the title"
+                  value=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6 pl-1">
+              <div class="form-group">
+                <label>Product</label>
+                <select
+                  class="form-control"
+                  aria-label=".form-select-lg example"
+                >
+                  <option selected>Choose Product</option>
+                  <option value="1">REST API</option>
+                  <option value="2">Programmable Video</option>
+                  <option value="3">Conversations</option>
+                  <option value="4">Programmable Messaaging</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Description</label>
+                <textarea class="form-control textarea">
+Enter the details</textarea
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Group</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Twilio"
+                  aria-label="Disabled input example"
+                  disabled
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 pr-1">
+              <div class="form-group">
+                <label>Published By</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Manish Vaghasiya"
+                  aria-label="Disabled input example"
+                  disabled
+                />
+              </div>
+            </div>
+            <div class="col-md-4 px-1">
+              <div class="form-group">
+                <label>Tags</label>
+                <select
+                  class="form-control"
+                  aria-label=".form-select-lg example"
+                >
+                  <option selected>Choose Tags</option>
+                  <option value="1">tw-conv-sdk</option>
+                  <option value="2">tw-video-sdk-android</option>
+                  <option value="3">tw-voice-ios-sdk</option>
+                  <option value="4">tw-messaging-api</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4 pl-1">
+              <div class="form-group">
+                <label>Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder="dd/mm/yyyy"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="update ml-auto mr-auto">
+              <button type="submit" class="btn btn-primary btn-round">
+                Post
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- <div class="table-responsive">
+          <!-- <table class="table">
             <thead class=" text-primary">
               <th>
                 Name
@@ -121,132 +223,66 @@
                 </td>
               </tr>
             </tbody>
-          </table>
-        </div>
+          </table> 
+        </div> -->
       </div>
     </div>
-  </div>
-  <div class="col-md-12">
-    <div class="card card-plain">
+    <div class="card">
       <div class="card-header">
-        <h4 class="card-title"> Table on Plain Background</h4>
-        <p class="card-category"> Here is a subtitle for this table</p>
+        <h4 class="card-title">Recent Posts</h4>
+        <p class="card-category">Here are some recent posts</p>
       </div>
       <div class="card-body">
         <div class="table-responsive">
           <table class="table">
-            <thead class=" text-primary">
-              <th>
-                Name
-              </th>
-              <th>
-                Country
-              </th>
-              <th>
-                City
-              </th>
-              <th class="text-right">
-                Salary
-              </th>
+            <thead class="text-primary">
+              <th>ID</th>
+              <th>Published By</th>
+              <th>Product</th>
+              <th class="text-right">Last Update</th>
             </thead>
             <tbody>
               <tr>
-                <td>
-                  Dakota Rice
-                </td>
-                <td>
-                  Niger
-                </td>
-                <td>
-                  Oud-Turnhout
-                </td>
-                <td class="text-right">
-                  $36,738
-                </td>
+                <td>110125</td>
+                <td>Dakota Rice</td>
+                <td>Niger</td>
+                <td class="text-right">$36,738</td>
               </tr>
               <tr>
-                <td>
-                  Minerva Hooper
-                </td>
-                <td>
-                  Curaçao
-                </td>
-                <td>
-                  Sinaai-Waas
-                </td>
-                <td class="text-right">
-                  $23,789
-                </td>
+                <td>Minerva Hooper</td>
+                <td>Curaçao</td>
+                <td>Sinaai-Waas</td>
+                <td class="text-right">$23,789</td>
               </tr>
               <tr>
-                <td>
-                  Sage Rodriguez
-                </td>
-                <td>
-                  Netherlands
-                </td>
-                <td>
-                  Baileux
-                </td>
-                <td class="text-right">
-                  $56,142
-                </td>
+                <td>Sage Rodriguez</td>
+                <td>Netherlands</td>
+                <td>Baileux</td>
+                <td class="text-right">$56,142</td>
               </tr>
               <tr>
-                <td>
-                  Philip Chaney
-                </td>
-                <td>
-                  Korea, South
-                </td>
-                <td>
-                  Overland Park
-                </td>
-                <td class="text-right">
-                  $38,735
-                </td>
+                <td>Philip Chaney</td>
+                <td>Korea, South</td>
+                <td>Overland Park</td>
+                <td class="text-right">$38,735</td>
               </tr>
               <tr>
-                <td>
-                  Doris Greene
-                </td>
-                <td>
-                  Malawi
-                </td>
-                <td>
-                  Feldkirchen in Kärnten
-                </td>
-                <td class="text-right">
-                  $63,542
-                </td>
+                <td>Doris Greene</td>
+                <td>Malawi</td>
+                <td>Feldkirchen in Kärnten</td>
+                <td class="text-right">$63,542</td>
               </tr>
               <tr>
-                <td>
-                  Mason Porter
-                </td>
-                <td>
-                  Chile
-                </td>
-                <td>
-                  Gloucester
-                </td>
-                <td class="text-right">
-                  $78,615
-                </td>
+                <td>Mason Porter</td>
+                <td>Chile</td>
+                <td>Gloucester</td>
+                <td class="text-right">$78,615</td>
               </tr>
               <tr>
-                <td>
-                  Jon Porter
-                </td>
-                <td>
-                  Portugal
-                </td>
-                <td>
-                  Gloucester
-                </td>
-                <td class="text-right">
-                  $98,615
-                </td>
+                <td>Jon Porter</td>
+                <td>Portugal</td>
+                <td>Gloucester</td>
+                <td class="text-right">$98,615</td>
               </tr>
             </tbody>
           </table>
