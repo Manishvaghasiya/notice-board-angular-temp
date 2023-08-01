@@ -1,21 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
-declare interface TableData {
+declare interface CreateNoticeData {
     headerRow: string[];
     dataRows: string[][];
 }
 
 @Component({
-    selector: 'table-cmp',
+    selector: 'create-notice-cmp',
     moduleId: module.id,
-    templateUrl: 'table.component.html'
+    templateUrl: 'create-notice.component.html'
 })
 
-export class TableComponent implements OnInit{
-    public tableData1: TableData;
-    public tableData2: TableData;
+export class CreateNoticeComponent implements OnInit{
+    public createNoticeData1: CreateNoticeData;
+    public createNoticeData2: CreateNoticeData;
     ngOnInit(){
-        this.tableData1 = {
+        this.createNoticeData1 = {
             headerRow: [ 'ID', 'Name', 'Country', 'City', 'Salary'],
             dataRows: [
                 ['1', 'Dakota Rice', 'Niger', 'Oud-Turnhout', '$36,738'],
@@ -26,7 +26,7 @@ export class TableComponent implements OnInit{
                 ['6', 'Mason Porter', 'Chile', 'Gloucester', '$78,615']
             ]
         };
-        this.tableData2 = {
+        this.createNoticeData2 = {
             headerRow: [ 'ID', 'Name',  'Salary', 'Country', 'City' ],
             dataRows: [
                 ['1', 'Dakota Rice','$36,738', 'Niger', 'Oud-Turnhout' ],
